@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Page</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Add student</h1>
+    </header>
+    <div class="container">
+      <div class="div1">
+        <div class="classes">
+          <div class="dashboard">Dashboard</div>
+          <div class="j1a b">JSS1A</div>
+          <div class="j1b b">JSS1B</div>
+          <div class="j2a b">JSS2A</div>
+          <div class="j2b b">JSS2B</div>
+        </div>
+      </div>
+
+      <div class="dash">
+        <div class="welcome"></div>
+        <!-- <h2 class="welcome"></h2> -->
+        <form class="form-container">
+          <label for="class">CLASS:</label>
+          <select name="class" id="class" class="drop-down">
+            <option value="jss1a">JSS1A</option>
+            <option value="jss1b">JSS1B</option>
+            <option value="jss2a">JSS2A</option>
+            <option value="jss2b">JSS2B</option>
+          </select>
+
+          <div class="blabla">
+            <label for="name">Name:</label>
+            <input class="name" type="text" />
+            <br />
+            <label for="c/a">C/A:</label>
+            <input max="15" class="ca" type="number" />
+            <br />
+            <label for="c/a-test">C/A Test:</label>
+            <input max="15" class="ca-test" type="number" />
+            <br />
+            <label for="exam">Exam:</label>
+            <input max="70" class="exam" type="number" />
+            <br />
+            <button class="submit" type="submit">submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="home hide">
+
+      </div>
+
+      <div class="bg-modal">
+        <div class="modal-content hide2">
+          <div class="checked"><img src="./images/cancel.svg" /></div>
+          <form>
+            <input class="Name modal edit-name" type="text" placeholder="Name" />
+            <input max="15" class="C/A modal edit-ca" type="number" placeholder="C/A" />
+            <input
+              max="15"
+              class="C/A Test modal edit-ca-test"
+              type="number"
+              placeholder="C/A Test"
+            />
+            <input
+              max="70"
+              class="Exam modal edit-exam"
+              type="number"
+              placeholder="Exam"
+            />
+
+            <button class="button" role="button">Edit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="demo.js"></script>
+  </body>
+</html>
